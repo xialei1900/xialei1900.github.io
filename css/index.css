@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}  
+a {
+    text-decoration: none;
+}
+div{
+    border:1px solid red;
+}
+#topContent {
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    background:url("../src/top_back.jpg") no-repeat 0 0;
+    background-size:100% 100%;
+    padding: 75px 0;
+    margin: 0 auto;
+}
+#middleContent {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    align-content: center;
+}
+#info {
+    width: 130px;
+    height: 130px;
+    text-align:center;
+    margin-left:25%;
+}
+#icon {
+    width: 130px;
+    height: 130px;
+    position:absolute;
+    left:28%;
+    top:18%;
+    background-color:aliceblue;
+}
+#player {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 14%;
+    top: 18%;
+}
+

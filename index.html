@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-    <title>我的主页</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="js/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="js/themes/icon.css">
@@ -10,28 +10,21 @@
     <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
     <script type="text/javascript">
         $(function(){
-           
+
         });
     </script>
 </head>
-<body>
-    <div>
-        <div id="topContent"></div>
-
-        <div id="middleContent">
-            <div id="info">
-                <span style="width:100%;">阿尔萨斯<br /></span>
-                <span style="width:100%;">霜之哀伤<br /></span>
-                <span style="width:100%;">灰烬之刃<br /></span>
+<body class="easyui-layout"style="background-image:url(src/background.jpg)">
+    <div  class="easyui-layout ground" data-options="fit:true" >
+        <div class="east layout" data-options="region:'east',border:false" style="width:500px;">
+            <div>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=22450959&auto=1&height=430"></iframe>
             </div>
+            </div>
+        <div class="west layout" data-options="region:'west',border:false" style="width:500px;">
+            
         </div>
-
-        <div id="icon">
-            <img src="src/icon.jpg" style="width:100%;height:100%;"/>
-        </div>
-        <div id="player">
-            <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=739738268&auto=1&height=430"></iframe>-->
-        </div>
+        <div class="center layout" data-options="region:'center',border:false">5</div>
     </div>
-</body>
+</body> 
 </html> 

@@ -4,43 +4,20 @@ body {
 a {
     text-decoration: none;
 }
-div{
-    border:1px solid red;
+
+/*设置背景透明*/
+div .layout {
+    background-color: rgba(0,0,0,0); /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+    /*filter: alpha(Opacity=0);
+    opacity: 0;*/
 }
-#topContent {
-    width: 1000px;
-    height: 50px;
-    text-align: center;
-    background:url("../src/top_back.jpg") no-repeat 0 0;
-    background-size:100% 100%;
-    padding: 75px 0;
-    margin: 0 auto;
+@media \0screen\,screen\9 { /* 只支持IE6、7、8 */
+    .layout {
+        background-color: #000000;
+        filter: Alpha(opacity=0);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
 }
-#middleContent {
-    width: 1000px;
-    height: 200px;
-    margin: 0 auto;
-    align-content: center;
-}
-#info {
-    width: 130px;
-    height: 130px;
-    text-align:center;
-    margin-left:25%;
-}
-#icon {
-    width: 130px;
-    height: 130px;
-    position:absolute;
-    left:28%;
-    top:18%;
-    background-color:aliceblue;
-}
-#player {
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    right: 14%;
-    top: 18%;
-}
+
 
